@@ -1,14 +1,14 @@
-☐ Skapa en array av 10 todos som du har i state.
+✔ Skapa en array av 10 todos som du har i state. @done(23-08-25 15:06)
 
-☐ Varje todo ska innehålla en titel (sträng), en beskrivning (sträng), samt om den är utförd eller inte (boolean). 
+✔ Varje todo ska innehålla en titel (sträng), en beskrivning (sträng), samt om den är utförd eller inte (boolean). @done(23-08-25 15:06)
  
-☐ Din uppgift är att skriva ut titeln på samtliga ärenden. 
+✔ Din uppgift är att skriva ut titeln på samtliga ärenden. @done(23-08-25 15:16)
  
-☐ Om en todo ej är utförd, skriv även ut dess beskrivning. 
+✔ Om en todo ej är utförd, skriv även ut dess beskrivning. @done(23-08-25 15:21)
  
-☐ Om den är utförd, ska dess titel vara grön.
+✔ Om den är utförd, ska dess titel vara grön. @done(23-08-25 15:23)
  
-☐ Skapa funktionalitet för att lägga in en ny todo i state (ska ha titel och beskrivning).
+✔ Skapa funktionalitet för att lägga in en ny todo i state (ska ha titel och beskrivning). @done(23-08-25 15:47)
  
 ☐ Gör det även möjligt att ta bort en todo.
  

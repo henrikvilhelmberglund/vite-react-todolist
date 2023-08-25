@@ -1,8 +1,9 @@
 export const duckTodos = [
   {
     title: "Research Duck Species",
-    description: "Learn about different species of ducks and their characteristics.",
-    completed: false,
+    description:
+      "Learn about different species of ducks and their characteristics.",
+    completed: true,
   },
   {
     title: "Buy Duck Food",
@@ -16,7 +17,8 @@ export const duckTodos = [
   },
   {
     title: "Read about Duck Behavior",
-    description: "Read up on how ducks interact with each other and their environment.",
+    description:
+      "Read up on how ducks interact with each other and their environment.",
     completed: false,
   },
   {
