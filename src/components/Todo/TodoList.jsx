@@ -7,6 +7,14 @@ export default function TodoList() {
   const [todoTitle, setTodoTitle] = useState("");
   const [todoDesc, setTodoDesc] = useState("");
 
+  function removeTodo(i) {
+    setTodos((prevState) => {
+      const newState = [...prevState];
+      newState.splice(i, 1);
+      return newState;
+    });
+  }
+
   return (
     <div>
       <h3 className="text-3xl">TODOs</h3>
@@ -40,7 +48,7 @@ export default function TodoList() {
         Add TODO
       </button>
       {todos.map((todo, i) => (
-        <Todo {...todo} key={i} />
+        <Todo {...todo} removeTodo={() => removeTodo(i)} key={i} />
       ))}
     </div>
   );

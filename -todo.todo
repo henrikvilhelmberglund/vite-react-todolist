@@ -10,6 +10,6 @@
  
 ✔ Skapa funktionalitet för att lägga in en ny todo i state (ska ha titel och beskrivning). @done(23-08-25 15:47)
  
-☐ Gör det även möjligt att ta bort en todo.
+✔ Gör det även möjligt att ta bort en todo. @done(23-08-25 16:17)
  
 ☐ Skapa funktionalitet för att markera en todo som utförd med ett klick.
