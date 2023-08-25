@@ -15,6 +15,18 @@ export default function TodoList() {
     });
   }
 
+  function toggleComplete(i) {
+    setTodos((prevState) => {
+      const newState = [...prevState];
+      // ! doesn't work
+      // newState[i].completed = !newState[i].completed;
+      newState[i] = { ...newState[i], completed: !newState[i].completed };
+      // console.log(newState[i].completed);
+      // console.log(newState);
+      return newState;
+    });
+  }
+
   return (
     <div>
       <h3 className="text-3xl">TODOs</h3>
@@ -48,7 +60,12 @@ export default function TodoList() {
         Add TODO
       </button>
       {todos.map((todo, i) => (
-        <Todo {...todo} removeTodo={() => removeTodo(i)} key={i} />
+        <Todo
+          {...todo}
+          removeTodo={() => removeTodo(i)}
+          toggleComplete={() => toggleComplete(i)}
+          key={i}
+        />
       ))}
     </div>
   );
