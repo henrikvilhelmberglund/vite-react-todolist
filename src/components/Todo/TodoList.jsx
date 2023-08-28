@@ -16,15 +16,19 @@ export default function TodoList() {
   }
 
   function toggleComplete(i) {
-    setTodos((prevState) => {
-      const newState = [...prevState];
+    // ? better way maybe
+    let newTodos = [...todos];
+    newTodos[i].completed = !newTodos[i].completed;
+    setTodos(newTodos);
+    // setTodos((prevState) => {
+    //   const newState = [...prevState];
       // ! doesn't work
       // newState[i].completed = !newState[i].completed;
-      newState[i] = { ...newState[i], completed: !newState[i].completed };
-      // console.log(newState[i].completed);
-      // console.log(newState);
-      return newState;
-    });
+      // newState[i] = { ...newState[i], completed: !newState[i].completed };
+    //   // console.log(newState[i].completed);
+    //   // console.log(newState);
+      // return newState;
+    // });
   }
 
   return (
